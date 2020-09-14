@@ -141,6 +141,11 @@ article img {
     width: 100%;
 }
 
+#liste img {
+    object-fit: cover;
+    width: 25rem;
+    height: 25rem;
+}
 
 #modal {
     background-color: rgba(0, 0, 0, 0.6);
@@ -228,6 +233,10 @@ footer img {
 /* MEDIAQUERIES */
 
 @media (min-width: 768px) {
+    #liste {
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    }
+
     .product {
         display: grid;
         grid-gap: 10px;
@@ -239,6 +248,11 @@ footer img {
         grid-column: 2;
     }
 
+    #liste img {
+        object-fit: cover;
+        width: 22.5rem;
+        height: 22.5rem;
+    }
 
     /****** FORSØGT MED FLEX ******/
 
@@ -264,6 +278,18 @@ footer img {
     .product:nth-child(even) {
         flex-direction: row-reverse;
     }*/
+}
+
+@media (min-width: 1024px) {
+    #liste {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+
+    #liste img {
+        object-fit: cover;
+        width: 15rem;
+        height: 15rem;
+    }
 }
 
 @media screen and (max-width: 943px) {
