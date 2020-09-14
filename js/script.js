@@ -25,6 +25,7 @@ function visMenu() {
 			const clone = template.cloneNode(true).content;
 			clone.querySelector("h2").textContent = drink.gsx$name.$t;
 			clone.querySelector("img").src = "img/" + drink.gsx$image.$t + ".jpg";
+			clone.querySelector(".kort").textContent = drink.gsx$short.$t;
 			clone.querySelector(".oprindelse").textContent = "Oprindelse: " + drink.gsx$origin.$t;
 			clone.querySelector("article").addEventListener("click", () => visDetaljer(drink));
 			list.appendChild(clone);
