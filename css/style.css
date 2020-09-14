@@ -244,45 +244,17 @@ footer img {
         grid-auto-flow: dense;
     }
 
-    .product:nth-child(4n-1) {
-        grid-column: 2;
-    }
-
     #liste img {
         object-fit: cover;
         width: 22.5rem;
         height: 22.5rem;
     }
-
-    /****** FORSØGT MED FLEX ******/
-
-    /*.product {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .product_img {
-        flex-basis: 45%;
-        flex-grow: 1;
-    }
-
-    .product_text {
-        flex-basis: 45%;
-        flex-grow: 1;
-    }
-
-    .product:nth-child(odd) {
-        flex-direction: row;
-    }
-
-    .product:nth-child(even) {
-        flex-direction: row-reverse;
-    }*/
 }
 
 @media (min-width: 1024px) {
     #liste {
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
     }
 
     #liste img {
