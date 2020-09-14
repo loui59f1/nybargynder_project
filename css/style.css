@@ -129,7 +129,7 @@ footer p {
 article {
     border: 1px solid #ebebeb;
     box-shadow: 0px 0px 14px -4px rgba(199, 199, 199, 1);
-    padding: 30px;
+    padding: 0 30px 30px 30px;
     background-color: #fff;
 }
 
@@ -145,6 +145,17 @@ article img {
     object-fit: cover;
     width: 25rem;
     height: 25rem;
+    margin-top: 30px;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product_text {
+    padding-top: 30px;
 }
 
 #modal {
@@ -170,6 +181,7 @@ article img {
     height: auto;
     background-color: #fff;
     margin: 4rem auto;
+    padding-top: 30px;
     box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.8);
 }
 
@@ -237,6 +249,14 @@ footer img {
         grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     }
 
+    article {
+        padding-top: 30px;
+    }
+
+    .product_text {
+        padding-top: 0;
+    }
+
     .product {
         display: grid;
         grid-gap: 10px;
@@ -248,6 +268,7 @@ footer img {
         object-fit: cover;
         width: 22.5rem;
         height: 22.5rem;
+        margin-top: 0;
     }
 }
 
