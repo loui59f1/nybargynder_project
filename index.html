@@ -2,71 +2,75 @@
 <html lang="da">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Nybargynder</title>
-	<link rel="stylesheet" href="">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700;800;900&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Rye&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nybargynder</title>
+    <link rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700;800;900&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Rye&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-	<header>
-		<h1>nybargynder</h1>
-	</header>
+    <header>
+        <h1>nybargynder</h1>
+    </header>
 
-	<nav>
-		<button class="filter active" data-kategori="alle">Alle</button>
-		<button class="filter" data-kategori="Cocktail">Cocktails</button>
-		<button class="filter" data-kategori="Beer">Øl</button>
-		<button class="filter" data-kategori="Shot">Shots</button>
-		<button class="filter" data-kategori="Drink">Aperitif</button>
-	</nav>
-	<h2 class="heading">Alle</h2>
-	<section id="liste"></section>
+    <nav>
+        <button class="filter active" data-kategori="alle">Alle</button>
+        <button class="filter" data-kategori="Cocktail">Cocktails</button>
+        <button class="filter" data-kategori="Beer">Øl</button>
+        <button class="filter" data-kategori="Shot">Shots</button>
+        <button class="filter" data-kategori="Drink">Aperitif</button>
+    </nav>
+    <h2 class="heading">Alle</h2>
+    <section id="liste"></section>
 
-	<footer>
-		<div class="container">
-			<div class="sm_column">
-				Logo footer
-			</div>
-			<div class="sm_column">
-				Info footer
-			</div>
-			<div class="sm_column align_right">
-				Info footer 2
-			</div>
-		</div>
-	</footer>
+    <footer>
+        <div class="container">
+            <div class="sm_column">
+                Logo footer
+            </div>
+            <div class="sm_column">
+                Info footer
+            </div>
+            <div class="sm_column align_right">
+                Info footer 2
+            </div>
+        </div>
+    </footer>
 
-	<template>
-		<article>
-			<h2></h2>
-			<img src="" alt="">
-			<p class="kort"></p>
-			<p class="oprindelse"></p>
-			<p class="pris"></p>
-		</article>
-	</template>
+    <template>
+        <article>
+            <h2></h2>
+            <div class="product">
+                <img src="" alt="">
+                <div class="product_text">
+                    <p class="kort"></p>
+                    <p class="oprindelse"></p>
+                    <p class="pris"></p>
+                </div>
+            </div>
+        </article>
+    </template>
 
 
-	<section id="modal">
-		<article>
-			<div id="close">x</div>
-			<div class="column img">
-				<img src="" alt="">
-			</div>
-			<div class="column">
-				<h2></h2>
-				<p><span class="lang"></span></p>
-				<p>Oprindelse: <span class="oprindelse"></span></p>
-			</div>
-		</article>
-	</section>
+    <section id="modal">
+        <article>
+            <div id="close">x</div>
+            <div class="column img">
+                <img src="" alt="">
+            </div>
+            <div class="column">
+                <h2></h2>
+                <p><span class="lang"></span></p>
+                <p>Oprindelse: <span class="oprindelse"></span></p>
+            </div>
+        </article>
+    </section>
 
-	<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 
