@@ -82,9 +82,9 @@ h1 {
 }
 
 h2 {
-    font-size: 17px;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-family: 'Fredericka the Great', serif;
     margin-top: 0;
 }
 
@@ -132,15 +132,11 @@ footer p {
     padding-bottom: 50px;
 }
 
-article {
-    border: 1px solid #ebebeb;
-    box-shadow: 0px 0px 14px -4px rgba(199, 199, 199, 1);
-    padding: 0 30px 30px 30px;
-    background-color: #fff;
-}
-
 #liste article {
     cursor: pointer;
+    box-shadow: 0px 0px 14px -4px rgba(199, 199, 199, 1);
+    padding: 0 30px 30px 30px;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 article img {
@@ -169,10 +165,13 @@ article img {
 
 .product_text h2 {
     margin: 0 0 10px 0;
+    color: #fff;
+    font-family:
 }
 
 .product_text p {
     margin: 0;
+    color: #fff;
 }
 
 .text_top {
@@ -182,6 +181,13 @@ article img {
 .text_color {
     color: #DC6713;
     font-weight: 1000;
+}
+
+.divider {
+    width: 90vw;
+    height: 2px;
+    background-color: #DC6713;
+    place-self: center;
 }
 
 #modal {
@@ -275,7 +281,7 @@ footer img {
         grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     }
 
-    article {
+    #liste article {
         padding-top: 30px;
     }
 
@@ -301,7 +307,7 @@ footer img {
 @media (min-width: 1024px) {
     #liste {
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-
+        grid-auto-flow: dense;
     }
 
     #liste img {
@@ -309,6 +315,19 @@ footer img {
         width: 15rem;
         height: 15rem;
     }
+
+    #liste article {
+        grid-row: span 2;
+    }
+
+    .divider {
+        width: 40vw;
+        grid-column: 1/3;
+    }
+
+    /*div.divider:nth-child(2n) {
+        display: none;
+    }*/
 }
 
 @media screen and (max-width: 943px) {
