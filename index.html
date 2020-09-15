@@ -2,88 +2,90 @@
 <html lang="da">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Nybargynder</title>
-	<link rel="stylesheet" href="">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700;800;900&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Rye&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nybargynder</title>
+    <link rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700;800;900&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Rye&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-	<!-- Top sektion til at holde logo -->
-	<div id="topbar">
-		<img src="img/logo.png" alt="">
-	</div>
+    <!-- Top sektion til at holde logo -->
+    <div id="topbar">
+        <img src="img/logo.png" alt="">
+    </div>
 
-	<!-- Header/splash sektion -->
-	<header></header>
+    <!-- Header/splash sektion -->
+    <header></header>
 
-	<!-- Filtrerings menu med data attributer -->
-	<nav>
-		<button class="filter active" data-kategori="alle">Alle</button>
-		<button class="filter" data-kategori="Cocktail">Cocktails</button>
-		<button class="filter" data-kategori="Beer">Øl</button>
-		<button class="filter" data-kategori="Shot">Shots</button>
-		<button class="filter" data-kategori="Drink">Drinks</button>
-		<button class="filter" data-kategori="Aperitif">Aperitif</button>
-	</nav>
+    <!-- Filtrerings menu med data attributer -->
+    <nav>
+        <button class="filter active" data-kategori="alle">Alle</button>
+        <button class="filter" data-kategori="Cocktail">Cocktails</button>
+        <button class="filter" data-kategori="Beer">Øl</button>
+        <button class="filter" data-kategori="Shot">Shots</button>
+        <button class="filter" data-kategori="Drink">Drinks</button>
+        <button class="filter" data-kategori="Aperitif">Aperitif</button>
+    </nav>
 
-	<h2 class="heading">Alle</h2>
+    <h2 class="heading">Alle</h2>
 
-	<!-- Tom sektion til alle drinks -->
-	<section id="liste"></section>
+    <!-- Tom sektion til alle drinks -->
+    <section id="liste"></section>
 
-	<!-- Footer -->
-	<footer>
-		<div class="container">
-			<div class="sm_column">
-				Logo footer
-			</div>
-			<div class="sm_column">
-				Info footer
-			</div>
-			<div class="sm_column align_right">
-				Info footer 2
-			</div>
-		</div>
-	</footer>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="sm_column">
+                Logo footer
+            </div>
+            <div class="sm_column">
+                Info footer
+            </div>
+            <div class="sm_column align_right">
+                Info footer 2
+            </div>
+        </div>
+    </footer>
 
-	<!-- Indhold af template tag er skabelonen til drinks der skal ligge i #liste -->
-	<template>
-		<article>
+    <!-- Indhold af template tag er skabelonen til drinks der skal ligge i #liste -->
+    <template>
+        <article>
 
-			<div class="product">
-				<img src="" alt="">
-				<div class="product_text">
-					<h2></h2>
-					<p class="kort"></p>
-					<p class="oprindelse"></p>
-					<p class="pris"></p>
-				</div>
-			</div>
-		</article>
-	</template>
+            <div class="product">
+                <img src="" alt="">
+                <div class="product_text">
+                    <div class="text_top">
+                        <h2></h2>
+                        <p class="kort"></p>
+                    </div>
+                    <div class="text_bottom">
+                        <p><span class="text_color">Oprindelse: </span><span class="oprindelse"></span></p>
+                    </div>
+                    <!--<p class="pris"></p>-->
+                </div>
+            </div>
+        </article>
+    </template>
 
-	<!-- Modal sektion, ikke synlig medmindre den klikkes på -->
-	<section id="modal">
-		<article>
-			<div id="close">x</div>
-			<div class="column img">
-				<img src="" alt="">
-			</div>
-			<div class="column">
-				<h2></h2>
-				<p><span class="lang"></span></p>
-				<p>Oprindelse: <span class="oprindelse"></span></p>
-			</div>
-		</article>
-	</section>
+    <!-- Modal sektion, ikke synlig medmindre den klikkes på -->
+    <section id="modal">
+        <article>
+            <div id="close">x</div>
+            <div class="column img">
+                <img src="" alt="">
+            </div>
+            <div class="column">
+                <h2></h2>
+                <p><span class="lang"></span></p>
+                <p>Oprindelse: <span class="oprindelse"></span></p>
+            </div>
+        </article>
+    </section>
 
-	<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 
-</body>
-
-</html>
+</body></html>

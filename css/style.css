@@ -162,6 +162,26 @@ article img {
 
 .product_text {
     padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product_text h2 {
+    margin: 0 0 10px 0;
+}
+
+.product_text p {
+    margin: 0;
+}
+
+.text_top {
+    margin: 0 0 10px 0;
+}
+
+.text_color {
+    color: #DC6713;
+    font-weight: 1000;
 }
 
 #modal {
