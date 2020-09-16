@@ -92,7 +92,7 @@ footer p {
 
 button {
 	/* Knapper styling */
-	font-family: 'Playfair Display', serif;
+	font-family: 'Fredericka The Great', serif;
 	font-size: 1.2rem;
 	font-weight: 400;
 	padding: 5px 23px;
@@ -101,6 +101,11 @@ button {
 	color: #fff;
 	margin-bottom: 8px;
 	cursor: pointer;
+}
+
+button:hover {
+	-webkit-filter: brightness(115%);
+	filter: brightness(115%);
 }
 
 button:focus {
@@ -117,12 +122,13 @@ nav {
 }
 
 header {
-	width: 100%;
+	width: 100vw;
 	height: 300px;
 	background-image: url(../img/header.jpg);
-	background-position: center;
+	background-size: cover;
+	background-position: 0 15%;
+	background-attachment: fixed;
 	text-align: center;
-	padding: 20px;
 }
 
 .heading {
@@ -141,7 +147,7 @@ header {
 	/* styling af logo i topbar */
 	width: 300px;
 	height: auto;
-	margin-top: 2%;
+	margin-top: 70px;
 }
 
 nav {
@@ -276,14 +282,14 @@ article img {
 }
 
 .text_color {
-	color: #DC6713;
+	color: #E5A32C;
 	font-weight: 1000;
 }
 
 .divider {
 	width: 90vw;
 	height: 2px;
-	background-color: #DC6713;
+	background-color: #E5A32C;
 	place-self: center;
 }
 
@@ -317,7 +323,9 @@ article img {
 .boxed_layout {
 	max-width: 1100px;
 	margin: 0 auto;
-	text-align: center !important;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .banner {
