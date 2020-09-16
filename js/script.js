@@ -34,8 +34,26 @@ function visMenu() {
             // Når man klikker på article/drink vil funktionen visDetaljer (modal/popup) kaldes
             clone.querySelector("article").addEventListener("click", () => visDetaljer(drink));
             list.appendChild(clone);
+
+            // Når man fører musen over article/drink vil funktionen addEventListenersToImages sørge for, at billedet i articlen får skifter fra sort/hvid til farve.
+            addEventListenersToImages();
+
+            function addEventListenersToImages() {
+                document.querySelectorAll("#change_color").forEach((image) => {
+                    image.addEventListener("mouseover", addColorImg);
+                })
+            }
         }
     })
+}
+
+function addColorImg() {
+    this.querySelector("img").classList.remove("black_white");
+    this.addEventListener("mouseout", removeColorImg);
+}
+
+function removeColorImg() {
+    this.querySelector("img").classList.add("black_white");
 }
 
 // Denne funktion sætter vores drink info ind i den klargjorte modal sektion
