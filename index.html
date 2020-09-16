@@ -25,22 +25,20 @@
         </div>
     </section>
 
-    <section>
-        <!-- Filtrerings menu med data attributer -->
-        <nav>
-            <button class="filter active" data-kategori="alle">Alle</button>
-            <button class="filter" data-kategori="Cocktail">Cocktails</button>
-            <button class="filter" data-kategori="Beer">Øl</button>
-            <button class="filter" data-kategori="Shot">Shots</button>
-            <button class="filter" data-kategori="Drink">Drinks</button>
-            <button class="filter" data-kategori="Aperitif">Aperitif</button>
-        </nav>
+    <!-- Filtrerings menu med data attributer -->
+    <nav>
+        <button class="filter active" data-kategori="alle">Alle</button>
+        <button class="filter" data-kategori="Cocktail">Cocktails</button>
+        <button class="filter" data-kategori="Beer">Øl</button>
+        <button class="filter" data-kategori="Shot">Shots</button>
+        <button class="filter" data-kategori="Drink">Drinks</button>
+        <button class="filter" data-kategori="Aperitif">Aperitif</button>
+    </nav>
 
-        <h2 class="heading">Alle</h2>
+    <h2 class="heading">Alle</h2>
 
-        <!-- Tom sektion til alle drinks -->
-        <section id="liste"></section>
-    </section>
+    <!-- Tom sektion til alle drinks -->
+    <section id="liste"></section>
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -56,6 +54,7 @@
         </div>
     </footer>
 
+    <!-- Indhold af template tag er skabelonen til drinks der skal ligge i #liste -->
     <template>
         <article id="change_color">
             <div class="product">
@@ -74,7 +73,6 @@
         </article>
         <div class="divider"></div>
     </template>
-    >>>>>>> origin/master
 
     <!-- Modal sektion, ikke synlig medmindre den klikkes på -->
     <section id="modal">
