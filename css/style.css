@@ -62,7 +62,6 @@ footer p {
 /* STYLING AF ELEMENTER */
 
 button {
-    <<<<<<< HEAD
     /* Knapper styling */
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
@@ -73,16 +72,6 @@ button {
     margin-bottom: 8px;
     cursor: pointer;
     box-shadow: 0px 0px 8px -4px rgba(199, 199, 199, 1);
-    =======font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
-    padding: 5px 18px;
-    border: none;
-    background-color: #fff;
-    color: #000;
-    margin-bottom: 8px;
-    cursor: pointer;
-    box-shadow: 0px 0px 8px -4px rgba(199, 199, 199, 1);
-    > > > > > > > style
 }
 
 button:focus {
@@ -183,7 +172,6 @@ footer p {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 10px;
-    > > > > > > > style
 }
 
 #navigation li {
@@ -194,7 +182,6 @@ footer p {
 }
 
 #liste {
-    <<<<<<< HEAD
     /* Boxed layout i liste, hvor data ligger i - responsivt grid */
     max-width: 1100px;
     margin: 0 auto;
@@ -203,19 +190,6 @@ footer p {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-gap: 1em;
     padding-bottom: 50px;
-}
-
-article {
-    /* Styling af article element i liste container */
-    border: 1px solid #ebebeb;
-    box-shadow: 0px 0px 14px -4px rgba(199, 199, 199, 1);
-    padding: 0 30px 30px 30px;
-    background-color: #fff;
-}
-
-#liste article {
-    /* Sikrer at musen ændrer sig ved hover over artiklen (link til popup i JS) */
-    cursor: pointer;
 }
 
 article img {
@@ -229,32 +203,14 @@ article img {
     width: 25rem;
     height: 25rem;
     margin-top: 30px;
-    =======max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-gap: 1em;
-    padding-bottom: 50px;
 }
 
 #liste article {
+    /* Styling af article element i liste container */
     cursor: pointer;
     box-shadow: 0px 0px 14px -4px rgba(199, 199, 199, 1);
     padding: 0 30px 30px 30px;
     background-color: rgba(0, 0, 0, 0.2);
-}
-
-article img {
-    width: 100%;
-}
-
-#liste img {
-    object-fit: cover;
-    width: 25rem;
-    height: 25rem;
-    margin-top: 30px;
-    > > > > > > > style
 }
 
 .product {
@@ -298,7 +254,6 @@ article img {
 }
 
 #modal {
-    <<<<<<< HEAD
     /* Styling af popup element */
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
@@ -308,19 +263,9 @@ article img {
     width: 100vw;
     height: 100vh;
     display: none;
-    =======background-color: rgba(0, 0, 0, 0.6);
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 20px;
-    width: 100vw;
-    height: 100vh;
-    display: none;
-    > > > > > > > style
 }
 
 #modal article {
-    <<<<<<< HEAD
     /* Flex er brugt i popup, så tekst og billeder er på hver sin side */
     display: flex;
     position: fixed;
@@ -333,18 +278,6 @@ article img {
     margin: 4rem auto;
     padding-top: 30px;
     box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.8);
-    =======display: flex;
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 800px;
-    height: auto;
-    background-color: #fff;
-    margin: 4rem auto;
-    padding-top: 30px;
-    box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.8);
-    > > > > > > > style
 }
 
 #modal .column {
@@ -358,7 +291,6 @@ article img {
 }
 
 #close {
-    <<<<<<< HEAD
     /* Container element for luk knappen - styling og cursor kontrol */
     position: fixed;
     top: 1em;
@@ -369,16 +301,6 @@ article img {
     cursor: pointer;
     font-family: 'Quicksand', sans-serif;
     font-size: 25px;
-    =======position: fixed;
-    top: 1em;
-    right: 1.5em;
-    background-color: #fff;
-    color: #000;
-    padding: .1em;
-    cursor: pointer;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 25px;
-    > > > > > > > style
 }
 
 footer {
@@ -416,16 +338,6 @@ footer img {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
     grid-gap: 1em;
-    =======max-width: 1100px;
-    margin: 0 auto;
-    height: 200px;
-    padding: 20px;
-    vertical-align: middle;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-    grid-gap: 1em;
-    > > > > > > > style
 }
 
 /* MEDIAQUERIES */
