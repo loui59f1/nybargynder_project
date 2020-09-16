@@ -2,94 +2,101 @@
 <html lang="da">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nybargynder</title>
-    <link rel="stylesheet" href="">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700;800;900&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Rye&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nybargynder</title>
+	<link rel="stylesheet" href="">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700;800;900&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Rye&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
-    <!-- Header/splash sektion -->
-    <header>
-        <img src="img/logo.svg" alt="" class="logo">
-    </header>
+	<!-- Header/splash sektion -->
+	<header>
+		<img src="img/logo.svg" alt="" class="logo">
+	</header>
 
-    <section id="intro">
-        <div class="intro_container">
-            Introsektion
-        </div>
-    </section>
+	<section id="intro">
+		<div class="row">
+			<div class="column">
+				<h1>Dit online drinkskort</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis laudantium corporis voluptate nobis eveniet, dolore magni id delectus rerum maxime, sequi maiores quia recusandae animi laboriosam, earum minus eligendi soluta.</p>
+			</div>
+			<div class="column">
+				<img src="img/whisky_intro.png" alt="">
+			</div>
+		</div>
+	</section>
 
-    <!-- Filtrerings menu med data attributer -->
-    <nav>
-        <button class="filter active" data-kategori="alle">Alle</button>
-        <button class="filter" data-kategori="Cocktail">Cocktails</button>
-        <button class="filter" data-kategori="Beer">Øl</button>
-        <button class="filter" data-kategori="Shot">Shots</button>
-        <button class="filter" data-kategori="Drink">Drinks</button>
-        <button class="filter" data-kategori="Aperitif">Aperitif</button>
-    </nav>
+	<!-- Filtrerings menu med data attributer -->
+	<nav>
+		<button class="filter active" data-kategori="alle">Alle</button>
+		<button class="filter" data-kategori="Cocktail">Cocktails</button>
+		<button class="filter" data-kategori="Beer">Øl</button>
+		<button class="filter" data-kategori="Shot">Shots</button>
+		<button class="filter" data-kategori="Drink">Drinks</button>
+		<button class="filter" data-kategori="Aperitif">Aperitif</button>
+	</nav>
 
-    <h2 class="heading">Alle</h2>
+	<h2 class="heading">Alle</h2>
 
-    <!-- Tom sektion til alle drinks -->
-    <section id="liste"></section>
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="sm_column">
-                Logo footer
-            </div>
-            <div class="sm_column">
-                Info footer
-            </div>
-            <div class="sm_column align_right">
-                Info footer 2
-            </div>
-        </div>
-    </footer>
+	<!-- Tom sektion til alle drinks -->
+	<section id="liste"></section>
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="sm_column">
+				Logo footer
+			</div>
+			<div class="sm_column">
+				Info footer
+			</div>
+			<div class="sm_column align_right">
+				Info footer 2
+			</div>
+		</div>
+	</footer>
 
-    <!-- Indhold af template tag er skabelonen til drinks der skal ligge i #liste -->
-    <template>
-        <article id="change_color">
-            <div class="product">
-                <img src="" alt="" class="black_white">
-                <div class="product_text">
-                    <div class="text_top">
-                        <h2></h2>
-                        <p class="kort"></p>
-                    </div>
-                    <div class="text_bottom">
-                        <p><span class="text_color">Oprindelse: </span><span class="oprindelse"></span></p>
-                    </div>
-                    <!--<p class="pris"></p>-->
-                </div>
-            </div>
-        </article>
-        <div class="divider"></div>
-    </template>
+	<!-- Indhold af template tag er skabelonen til drinks der skal ligge i #liste -->
+	<template>
+		<article id="change_color">
+			<div class="product">
+				<img src="" alt="" class="black_white">
+				<div class="product_text">
+					<div class="text_top">
+						<h2></h2>
+						<p class="kort"></p>
+					</div>
+					<div class="text_bottom">
+						<p><span class="text_color">Oprindelse: </span><span class="oprindelse"></span></p>
+					</div>
+					<!--<p class="pris"></p>-->
+				</div>
+			</div>
+		</article>
+		<div class="divider"></div>
+	</template>
 
-    <!-- Modal sektion, ikke synlig medmindre den klikkes på -->
-    <section id="modal">
-        <article>
-            <div id="close">x</div>
-            <div class="column img">
-                <img src="" alt="">
-            </div>
-            <div class="column">
-                <h2></h2>
-                <p><span class="lang"></span></p>
-                <p>Oprindelse: <span class="oprindelse"></span></p>
-            </div>
-        </article>
-    </section>
+	<!-- Modal sektion, ikke synlig medmindre den klikkes på -->
+	<section id="modal">
+		<article>
+			<div id="close">x</div>
+			<div class="column img">
+				<img src="" alt="">
+			</div>
+			<div class="column">
+				<h2></h2>
+				<p><span class="lang"></span></p>
+				<p>Oprindelse: <span class="oprindelse"></span></p>
+			</div>
+		</article>
+	</section>
 
-    <script src="js/script.js"></script>
+	<script src="js/script.js"></script>
 
 </body>
 
