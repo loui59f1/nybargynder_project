@@ -193,7 +193,7 @@ h3 {
 }
 
 p {
-    font-family: 'Quicksand', sans-serif !important;
+    font-family: 'Quicksand', sans-serif;
 }
 
 footer p {
@@ -490,7 +490,7 @@ footer img {
         height: auto;
         background-color: #fff;
         margin-left: 0px;
-        margin-right: 50px !important;
+        margin-right: 50px;
         margin-bottom: 0;
         box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.8);
     }
@@ -530,7 +530,7 @@ footer img {
     }
 
     #liste article {
-        width: 100% !important;
+        width: 100%;
     }
 
 }
@@ -538,7 +538,7 @@ footer img {
 @media screen and (max-width: 438px) {
 
     #liste article {
-        width: 90vw !important;
+        width: 90vw;
     }
 
     #liste img {
