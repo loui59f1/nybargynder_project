@@ -340,6 +340,7 @@ article img {
 	margin: 4rem auto;
 	padding: 30px;
 	box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.8);
+	position: fixed;
 }
 
 .boxed_layout {
@@ -356,6 +357,7 @@ article img {
 	width: 380px;
 	height: 89px;
 	color: #000;
+	margin-bottom: 50px;
 }
 
 #modal .column {
@@ -564,7 +566,7 @@ footer img {
 	}
 
 	.divider {
-		margin-left: -100px;
+		margin-left: -50px;
 	}
 
 }
@@ -596,6 +598,10 @@ footer img {
 
 	.social_icons img:first-child {
 		margin-right: 10px;
+	}
+
+	.banner {
+		margin-bottom: 20px;
 	}
 
 }
