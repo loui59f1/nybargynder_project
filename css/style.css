@@ -129,7 +129,6 @@ button {
 }
 
 button:hover {
-	-webkit-filter: brightness(115%);
 	filter: brightness(115%);
 }
 
@@ -294,7 +293,6 @@ article img {
 .product_text h2 {
 	margin: 0 0 10px 0;
 	color: #fff;
-	font-family:
 }
 
 .product_text p {
